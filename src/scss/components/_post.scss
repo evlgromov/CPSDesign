@@ -1,0 +1,13 @@
+.post {
+  display: flex;
+  &__description {
+    width: 50%;
+    margin-right: 3rem;
+  }
+  &__image {
+    border-radius: .7rem;
+  }
+  &__link {
+    margin-left: .5rem;
+  }
+}

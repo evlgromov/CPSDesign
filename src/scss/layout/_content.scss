@@ -1,0 +1,48 @@
+.content {
+  background: $color-light-grey-2;
+  flex: 1;
+  font-family: TTLakes-Regular, sans-serif;
+  &__header {
+    padding: 4.2rem 3rem 0 0;
+  }
+  &__slider {
+    margin-top: .8rem;
+  }
+  &__post {
+    padding: 0 2.8rem 0 3.4rem;
+  }
+  &__brands {
+    margin-top: 5rem;
+  }
+  &__services {
+    margin-top: 5rem;
+  }
+  &__price {
+    margin-top: 5rem;
+  }
+  &__table {
+    margin-top: 3rem;
+    padding: 0 3rem;
+  }
+  &__offer {
+    margin-top: 3.2rem;
+    margin-bottom: 1.6rem;
+    width: 40%;
+  }
+  &__offer-link {
+    font-family: TTLakes-Medium, sans-serif;
+    font-size: 1.6rem;
+    &::after {
+      content: '';
+      background: url("../img/icons/dropright.svg");
+      width: .7rem;
+      height: 1.2rem;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: .9rem;
+    }
+  }
+  &__footer {
+    margin-top: 5rem;
+  }
+}

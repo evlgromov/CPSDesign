@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.2rem 3rem 2.1rem 3rem;
+  border-top: 1px solid $color-aquamarine-light-2;
+  &__text {
+    color: $color-dark-grey;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-family: TTLakes-Regular;
+  }
+}

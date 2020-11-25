@@ -1,0 +1,22 @@
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: .5rem 0;
+  padding-left: 3.4rem;
+  font-family: TTLakes-Medium, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: -0.2px;
+  color: $color-dark-grey;
+  align-items: center;
+  &__item {
+    padding: .8rem 2rem;
+    border: 2px solid $color-light-grey-2;
+    &_active,
+    &:hover {
+      background: $color-white;
+      border: 2px solid $color-aquamarine-light;
+      border-radius: 6px;
+    }
+  }
+}

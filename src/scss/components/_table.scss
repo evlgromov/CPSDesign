@@ -1,0 +1,39 @@
+.table {
+  font-family: TTLakes-Regular, sans-serif;
+  font-size: 1.4rem;
+
+  &__header {
+    padding: 0 3rem;
+  }
+
+  &__body {
+    background: $color-white;
+    border-radius: 1rem;
+    padding: 0 3rem;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    padding: 2.3rem 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-light-grey-2;
+    }
+  }
+
+  &__cell {
+    &:first-child {
+      flex: 0 0 46%;
+    }
+    &:nth-child(2) {
+      flex: 0 0 22%;
+    }
+    &:nth-child(3) {
+      flex: 0 0 20%;
+    }
+    &_header {
+      font-family: TTLakes-Medium, sans-serif;
+      color: $color-dark-grey;
+    }
+  }
+}

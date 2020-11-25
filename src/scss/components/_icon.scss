@@ -1,0 +1,68 @@
+.icon {
+  background: $color-pink;
+  border-radius: 50%;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  &_view_search {
+    &::after {
+      background: url(../img/icons/magnifier.svg) no-repeat;
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+  }
+  &_view_tools {
+    &::after {
+      background: url(../img/icons/tools.svg) no-repeat;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  &_view_status {
+    &::after {
+      background: url(../img/icons/magnifier_2.svg) no-repeat;
+      height: 2rem;
+      width: 1.6rem;
+    }
+  }
+  &_view_phone {
+    &::after {
+      background: url(../img/icons/phone.svg) no-repeat;
+      width: 1.8rem;
+      height: 1.9rem;
+    }
+  }
+  &_view_message {
+    &::after {
+      background: url(../img/icons/message.svg) no-repeat;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  &_view_profile {
+    &::after {
+      background: url(../img/icons/account.svg) no-repeat;
+      width: 2rem;
+      height: 1.9rem;
+    }
+  }
+  &_view_stroke {
+    background: none;
+    border: 2px solid $color-pink;
+    &::after {
+      content: '';
+      background: url(../img/icons/dropright.svg) no-repeat;
+      width: .75rem;
+      height: 1.2rem;
+    }
+  }
+}
+

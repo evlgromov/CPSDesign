@@ -1,0 +1,13 @@
+.read-more {
+  display: flex;
+  align-items: center;
+  font-family: TTLakes-Medium, sans-serif;
+  font-size: 1.6rem;
+  &::before {
+    content: '';
+    background: url("../img/icons/dropdown.svg");
+    width: .75rem;
+    height: 1rem;
+    margin-right: 1.6rem ;
+  }
+}
