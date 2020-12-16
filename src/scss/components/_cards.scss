@@ -1,19 +1,26 @@
 .cards {
-  &__list {
+  &__row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.6rem 3.2rem;
+    @include respond(tablet-land) {
+      gap: 1.6rem 2.4rem;
+    }
+    @include respond(tablet-port) {
+      gap: 1.6rem 2.4rem;
+    }
+  }
+  &__list--brands &__item {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 2.4rem 3rem;
+    align-items: center;
+    height: 8.6rem;
   }
-  &__list_of_services &__item {
-    height: 16rem;
+  &__list--services &__item {
     display: flex;
     flex-direction: column;
-  }
-  &__item {
-    margin: .8rem 0;
-  }
-  &__link {
-    margin-left: 3.9rem;
+    justify-content: space-between;
+    height: 16rem;
   }
 }

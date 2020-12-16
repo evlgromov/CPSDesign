@@ -1,13 +1,14 @@
+@import "mixins";
+
 html, body {
-  font-family: TTLakes-Regular, 'sans-serif';
   font-size: 62.5%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.container {
-  width: 144rem;
-  margin: 0 auto;
+
+.page {
   display: flex;
-  justify-content: center;
+  max-width: 144rem;
+  margin: 0 auto;
 }

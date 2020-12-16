@@ -1,0 +1,37 @@
+.typo {
+
+  &--weight--regular {
+    font-family: TTLakes-Regular, sans-serif;
+  }
+  &--weight--medium {
+    font-family: TTLakes-Medium, sans-serif;
+  }
+  &--weight--bold {
+    font-family: TTLakes-Bold, sans-serif;
+  }
+
+  &--size--s {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: .2px;
+  }
+  &--size--m {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: -.2px;
+  }
+  &--size--l {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: -.6px;
+  }
+  &--size--xl {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    letter-spacing: -.6px;
+  }
+  &--text--uppercase {
+    text-transform: uppercase;
+  }
+
+}

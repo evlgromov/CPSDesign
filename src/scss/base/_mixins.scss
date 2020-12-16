@@ -1,0 +1,11 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet-land {
+    @media(max-width: 85.375em) {@content}
+  }
+  @if $breakpoint == tablet-port {
+    @media(max-width: 62em) {@content}
+  }
+  @if $breakpoint == phone {
+    @media(max-width: 48em) {@content}
+  }
+}

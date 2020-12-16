@@ -1,11 +1,16 @@
+@import "../base/mixins";
+
 $color-white: #fff;
 $color-pink: #FF3E79;
 $color-light-grey: #f8f8f8;
 $color-light-grey-2: #f2f2f2;
+$color-light-grey-3: #B5B6BC;
 $color-grey: #EAEAEA;
 $color-dark-grey: #7E7E82;
 $color-aquamarine: #41F6D7;
 $color-aquamarine-light: #B8FFEC;
 $color-aquamarine-light-2: #D9FFF5;
-;
 $color-black: #1B1C21;
+
+$padding-desktop: 3.2rem;
+$padding-tablet: 2.4rem;

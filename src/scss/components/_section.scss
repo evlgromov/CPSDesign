@@ -1,0 +1,51 @@
+@import '../base/mixins';
+
+.section {
+  font-family: TTLakes-Regular, sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: -.2px;
+  @include respond(tablet-land) {
+
+  }
+  &__heading {
+    text-transform: uppercase;
+    border-top: 1px solid $color-aquamarine-light-2;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $color-dark-grey;
+    padding: 1.6rem $padding-desktop 1.6rem $padding-desktop;
+    display: block;
+    background: linear-gradient(to right, $color-light-grey-2, $color-white);
+    @include respond(tablet-land) {
+      padding: 1.6rem $padding-tablet 1.6rem $padding-tablet;
+    }
+  }
+  &__content {
+    margin-top: 2.4rem;
+  }
+  &__offer {
+    width: 42%;
+    margin-top: 3.2rem;
+    @include respond(tablet-land) {
+      margin-top: 2.4rem;
+      width: 60%;
+    }
+  }
+  &__link {
+    margin-top: 2.4rem;
+  }
+  &__offer-link {
+    font-family: TTLakes-Medium, sans-serif;
+    display: flex;
+    align-items: center;
+    margin-top: 1.6rem;
+    &::after {
+      content: '';
+      background: url('../img/icons/dropright.svg');
+      margin-left: 1rem;
+      width: 7px;
+      height: 12px;
+    }
+  }
+}

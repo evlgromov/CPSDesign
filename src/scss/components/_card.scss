@@ -1,11 +1,16 @@
 .card {
-  display: flex;
-  flex: 0 1 calc(25% - 6rem);
-  justify-content: space-between;
+  width: calc(100% / 4 - 2.4rem);
+  box-sizing: border-box;
   border: 1px solid $color-grey;
   border-radius: 6px;
   background: $color-white;
   padding: 1.6rem;
+  @include respond(tablet-land) {
+    width: calc(100% / 4 - 1.8rem);
+  }
+  @include respond(tablet-port) {
+    width: calc(100% / 3 - 1.6rem);
+  }
   &__title {
     color: $color-black;
     font-family: TTLakes-Medium, 'sans-serif';
@@ -14,7 +19,5 @@
   &__icon {
     display: flex;
     align-self: flex-end;
-  }
-  &__logo {
   }
 }

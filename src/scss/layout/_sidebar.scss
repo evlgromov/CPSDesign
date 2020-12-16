@@ -1,9 +1,19 @@
+@import "../base/mixins";
+
 .sidebar {
-  flex: 0 0 21%;
-  padding-left: 2.3rem;
-  background: $color-white;
+  @include respond(tablet-land) {
+    display: none;
+  }
+  box-sizing: border-box;
   font-family: TTLakes-Medium, sans-serif;
   font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: -.2px;
+  color: $color-black;
+  flex: 0 0 22.22%;
+  padding-left: 2.3rem;
+  background: $color-white;
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -15,10 +25,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 40%;
-  }
-  &__logo {
-    width: 9.7rem;
-    height: 5.1rem;
   }
   &__list {
     margin: 0;
@@ -33,7 +39,7 @@
     &:first-child {
       margin-top: .2rem;
     }
-    &_active,
+    &--active,
     &:hover {
       color: $color-dark-grey;
       transform: translateX(-2.25rem);
@@ -57,15 +63,9 @@
     flex-direction: column;
   }
   &__mail {
-    font-family: TTLakes-Medium, sans-serif;
-    font-size: 1.6rem;
-    color: $color-black;
     margin-top: 1.6rem;
   }
   &__phone {
-    font-family: TTLakes-Bold, sans-serif;
-    font-size: 2.4rem;
-    color: $color-black;
     margin-top: 1.6rem;
   }
   &__langs {
@@ -73,8 +73,7 @@
   }
   &__lang {
     display: inline-block;
-    text-transform: uppercase;
-    &_current,
+    &--current,
     &:hover {
       color: $color-dark-grey;
     }

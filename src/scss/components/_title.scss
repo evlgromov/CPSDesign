@@ -1,0 +1,46 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__group {
+    display: flex;
+  }
+  &__heading {
+    font-family: TTLakes-Bold, sans-serif;
+    font-size: 2.8rem;
+    line-height: 4rem;
+    letter-spacing: -.6px;
+    &:before {
+      margin-right: 3rem;
+      content: '';
+      background: $color-aquamarine;
+      border: .15rem solid $color-aquamarine;
+      border-radius: .2rem;
+    }
+    @include  respond(tablet-land) {
+      &::before {
+        content:'';
+        margin-right: 2rem;
+        border: 2px solid $color-aquamarine;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+    }
+  }
+  &__actions {
+    display: flex;
+    @include respond(tablet-land) {
+      display: none;
+    }
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+  }
+  &__action + &__action {
+    margin-left: 3.2rem;
+  }
+  &__icon {
+    margin-left: .8rem;
+  }
+}

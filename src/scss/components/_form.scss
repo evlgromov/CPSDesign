@@ -1,0 +1,23 @@
+.form {
+  padding: 2.4rem 3.2rem;
+  font-family: TTLakes-Regular, sans-serif;
+  &__input {
+    &:not(:first-child) {
+      margin-top: 1.6rem;
+    }
+    font-family: inherit;
+  }
+  &__confirm {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: $color-dark-grey;
+    margin: 1.6rem 0;
+  }
+  &__link {
+    color: $color-pink;
+    text-decoration: none;
+  }
+  &__submit {
+    float: right;
+  }
+}

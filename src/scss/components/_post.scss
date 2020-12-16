@@ -1,11 +1,14 @@
 .post {
   display: flex;
+  justify-content: space-between;
   &__description {
     width: 50%;
     margin-right: 3rem;
   }
   &__image {
     border-radius: .7rem;
+    width: 50%;
+    height: auto;
   }
   &__link {
     margin-left: .5rem;

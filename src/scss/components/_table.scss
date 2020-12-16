@@ -1,15 +1,21 @@
 .table {
   font-family: TTLakes-Regular, sans-serif;
   font-size: 1.4rem;
-
+  line-height: 1.8rem;
+  letter-spacing: .2px;
   &__header {
-    padding: 0 3rem;
+    font-family: TTLakes-Medium, sans-serif;
+    color: $color-dark-grey;
+  }
+
+  &__header &__row {
+    padding: .8rem 2.4rem 1.6rem;
   }
 
   &__body {
     background: $color-white;
     border-radius: 1rem;
-    padding: 0 3rem;
+    padding: 0 2.4rem;
   }
 
   &__row {
@@ -29,11 +35,26 @@
       flex: 0 0 22%;
     }
     &:nth-child(3) {
-      flex: 0 0 20%;
+      flex: 0 0 15%;
     }
-    &_header {
-      font-family: TTLakes-Medium, sans-serif;
-      color: $color-dark-grey;
+    &:last-child {
+      flex: 1;
+      text-align: right;
+    }
+    @include respond(tablet-port) {
+      &:first-child {
+        flex: 0 0 55%;
+      }
+      &:nth-child(2) {
+        flex: 0 0 15%;
+      }
+      &:nth-child(3) {
+        flex: 0 0 10%;
+      }
+      &:last-child {
+        flex: 1;
+        text-align: right;
+      }
     }
   }
 }

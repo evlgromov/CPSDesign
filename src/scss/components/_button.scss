@@ -1,19 +1,36 @@
 .btn {
   background: $color-pink;
-  padding: .8rem 1.4rem;
   text-decoration: none;
   color: $color-white;
   font-family: TTLakes-Bold, sans-serif;
   text-transform: uppercase;
   font-size: 1.2rem;
   border-radius: 1.6rem;
-  &::after {
-    display: inline-block;
-    vertical-align: middle;
-    content: '';
-    background: url("../img/icons/arrow.svg");
-    width: .7rem;
-    height: 1.2rem;
-    margin-left: 1.6rem;
+  &--order {
+    padding: .8rem 1.4rem;
+    &::after {
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      background: url("../img/icons/arrow.svg");
+      width: .7rem;
+      height: 1.2rem;
+      margin-left: 1.6rem;
+    }
+  }
+  &--submit {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: .8rem 1.8rem;
+    &::after {
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      background: url("../img/icons/arrow.svg");
+      width: .7rem;
+      height: 1.2rem;
+      margin-left: 1.2rem;
+    }
   }
 }

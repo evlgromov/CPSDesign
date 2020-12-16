@@ -1,10 +1,13 @@
-.read-more {
-  display: flex;
-  align-items: center;
-  font-family: TTLakes-Medium, sans-serif;
+.show-more {
+  font-family: TTLakes-Medium;
   font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: -.2px;
+  display: inline-block;
+  cursor: pointer;
   &::before {
     content: '';
+    display: inline-block;
     background: url("../img/icons/dropdown.svg");
     width: .75rem;
     height: 1rem;

@@ -1,0 +1,6 @@
+.container {
+  padding: 0 3.2rem;
+  @include respond(tablet-land) {
+    padding: 0 2.4rem;
+  }
+}

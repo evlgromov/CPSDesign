@@ -1,12 +1,20 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 3.2rem 3rem 2.1rem 3rem;
+  padding: 3.2rem $padding-desktop 2.1rem;
   border-top: 1px solid $color-aquamarine-light-2;
+  @include respond(tablet) {
+    padding: 3.2rem $padding-tablet 2.1rem;
+    //padding-right: $padding-tablet;
+    //padding-left: $padding-tablet;
+  }
   &__text {
     color: $color-dark-grey;
     font-size: 1.4rem;
     line-height: 1.6rem;
-    font-family: TTLakes-Regular;
+    font-family: TTLakes-Regular, sans-serif;
+  }
+  &__column {
+    max-width: 30%;
   }
 }
